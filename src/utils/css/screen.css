@@ -302,11 +302,11 @@ body {
       opacity 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transform: scale(1.1) translateY(-25px);
   }
-  .site-head-right a {
+  /* .site-head-right a {
     padding: 5px 0;
     margin: 1px 0;
     font-size: 2rem;
-  }
+  } */
   .nav {
     width: 100%;
     flex-direction: column;
@@ -329,7 +329,7 @@ body {
   .site-head-right {
     order: 3;
     width: 100%;
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
   }
   .social-links {
     flex-direction: column;
@@ -367,7 +367,7 @@ body {
     border-bottom: var(--color-base) 2px solid;
   }
   .site-head-open .site-head-right a {
-    opacity: 0.5;
+    opacity: 1;
   }
   .site-head-open .site-foot {
     display: block;

@@ -24,11 +24,9 @@ const Layout = props => {
               </div>
             </div>
           </a>
+
           <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
-              {/* <li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li> */}
               <li className="nav-projects" role="menuitem">
                 <Link to={`/projects`}>Projects</Link>
               </li>
@@ -37,6 +35,7 @@ const Layout = props => {
               </li>
             </ul>
           </nav>
+
           <div className="site-head-center">
             <Link className="site-head-logo" to={`/`}>
               {title}
@@ -45,9 +44,6 @@ const Layout = props => {
 
           <nav id="swup" className="site-head-right">
             <ul className="nav" role="menu">
-              {/* <li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li> */}
               <li className="nav-photos" role="menuitem">
                 <Link to={`/photos`}>Photography</Link>
               </li>
@@ -56,35 +52,6 @@ const Layout = props => {
               </li>
             </ul>
           </nav>
-
-          {/* <div className="site-head-right">
-            <div className="social-links">
-              <a
-                href="https://www.facebook.com"
-                title="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </a>
-              <a
-                href="https://twitter.com"
-                title="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RSS
-              </Link>
-            </div>
-          </div> */}
         </div>
       </header>
       <main id="site-main" className="site-main">
