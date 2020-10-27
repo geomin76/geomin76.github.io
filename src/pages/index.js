@@ -17,17 +17,17 @@ const BlogIndex = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO
-        title="Geo Min"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-      />
+      <SEO title="Home" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
           <h2 className="page-head-title">Hello, World!</h2>
-          <h2 className="page-head-title">
-            My name is Geo Min, and I'm a software developer in Raleigh NC!
-          </h2>
+          <h2 className="page-head-title">My name is Geo Min!</h2>
+          <br />
+          <p style={{ textAlign: "center", fontSize: 20 }}>
+            I'm a software developer in Raleigh NC, enjoy traveling, code for
+            fun, avid hiker, photographer and enjoy dank foods
+          </p>
         </header>
       )}
       {/* <div className="post-feed">

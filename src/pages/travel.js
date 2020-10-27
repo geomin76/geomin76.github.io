@@ -14,7 +14,7 @@ const TravelPage = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Photos"
+        title="Travels"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
 

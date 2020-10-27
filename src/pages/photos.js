@@ -14,22 +14,15 @@ const PhotosPage = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Travel"
+        title="Photography"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-            Photo stuff
+            Photography
           </h2>
-          <figure className="kg-card kg-image-card kg-width-full">
-            <Img
-              fluid={data.benchAccounting.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>Large imagery is at the heart of this theme</figcaption>
-          </figure>
           <h3 id="dynamic-styles">Dynamic styles</h3>
           <p>
             London comes with photo-centric main layout best suited to
