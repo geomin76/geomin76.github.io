@@ -143,6 +143,21 @@ const ProjectPage = ({ data }, location) => {
               </div>
             </div>
 
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <h4 id="this-is-a-sub-section">PiLapse</h4>
+                <p style={{ fontSize: 13, lineHeight: 1.5 }}>
+                  Built with Python
+                </p>
+                <a href="https://github.com/geomin76/pilapse" target="_blank">
+                  <img
+                    style={{ height: 28 }}
+                    src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg"
+                  />
+                </a>
+              </div>
+            </div>
+
             {/* 
             TEMPLATE ONE
             <div className="col-6">
