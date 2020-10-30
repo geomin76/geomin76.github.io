@@ -112,7 +112,7 @@ const indexQuery = graphql`
 
     first: file(relativePath: { eq: "1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -120,7 +120,7 @@ const indexQuery = graphql`
 
     two: file(relativePath: { eq: "2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -128,7 +128,7 @@ const indexQuery = graphql`
 
     three: file(relativePath: { eq: "3.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -136,7 +136,7 @@ const indexQuery = graphql`
 
     four: file(relativePath: { eq: "4.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -144,7 +144,7 @@ const indexQuery = graphql`
 
     five: file(relativePath: { eq: "5.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -152,7 +152,7 @@ const indexQuery = graphql`
 
     six: file(relativePath: { eq: "6.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -160,7 +160,7 @@ const indexQuery = graphql`
 
     seven: file(relativePath: { eq: "7.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
         }
       }
