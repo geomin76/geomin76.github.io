@@ -23,27 +23,79 @@ const PhotosPage = ({ data }, location) => {
           <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
             Photography
           </h2>
-          <h3 id="dynamic-styles">Dynamic styles</h3>
           <p>
-            London comes with photo-centric main layout best suited to
-            photography, graphics portfolios and other image-heavy uses.
+            I picked up a camera in 2011, and I haven't stopped taking photos
+            since then.
           </p>
           <p>
-            Both post and page templates are light and minimal, with all the
-            focus on the content while the design of the theme gets out of the
-            way. Beneath the hood, London enjoys the full power of the{" "}
-            <a href="https://docs.ghost.org/api/handlebars-themes/">
-              Ghost Handlebars Theme API
-            </a>{" "}
-            to provide limitless customisation options and dynamic styles.
+            Photography has been a lovely opportunity to capture memories,
+            lalala
           </p>
-          <p>
-            Don't forget to check out the{" "}
-            <a href="https://docs.ghost.org/integrations/">
-              Ghost Integrations Directory
-            </a>{" "}
-            for more ways to integrate Ghost with your favourite services.
-          </p>
+
+          <div class="row">
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.first.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Port Arnarstapi, Iceland / March 2018
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.two.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Cordillera Huayhuash, Peru / January 2020
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.three.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  North of Reykjavík, Iceland / March 2018
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.four.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Artist Point, Washington / January 2019
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.five.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Outer Banks, North Carolina / July 2018
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.six.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Falling Spring Falls, Virginia / April 2018
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.seven.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Chefchaouen, Morocco / November 2019
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
     </Layout>
@@ -57,9 +109,56 @@ const indexQuery = graphql`
         title
       }
     }
-    benchAccounting: file(
-      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
-    ) {
+
+    first: file(relativePath: { eq: "1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    two: file(relativePath: { eq: "2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    three: file(relativePath: { eq: "3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    four: file(relativePath: { eq: "4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    five: file(relativePath: { eq: "5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    six: file(relativePath: { eq: "6.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    seven: file(relativePath: { eq: "7.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
