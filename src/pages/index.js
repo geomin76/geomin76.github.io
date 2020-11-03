@@ -24,9 +24,9 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">Hello, World!</h2>
           <h2 className="page-head-title">My name is Geo Min!</h2>
           <br />
-          <p style={{ textAlign: "center", fontSize: 20 }}>
-            I'm a software developer in Raleigh NC, enjoy traveling, code for
-            fun, avid hiker, photographer and enjoy dank foods
+          <p style={{ textAlign: "center", fontSize: 20, lineHeight: 1.5 }}>
+            I'm a software developer in Raleigh NC, avid traveler, fan of the
+            outdoors, hobby photographer and enjoyer of foods
           </p>
         </header>
       )}

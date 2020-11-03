@@ -123,7 +123,7 @@ const PhotosPage = ({ data }, location) => {
               </div>
             </div>
 
-            <div className="col-6">
+            <div className="col-12">
               <div style={{ textAlign: "center" }}>
                 <Img fluid={data.nine.childImageSharp.fluid} />
                 <p style={{ fontSize: 13, lineHeight: 3 }}>

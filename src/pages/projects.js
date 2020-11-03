@@ -21,8 +21,14 @@ const ProjectPage = ({ data }, location) => {
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <h2 id="heading-level-2">Projects</h2>
+          <h4 style={{ textAlign: "center", lineHeight: 0.5 }}>
+            I code for fun!
+          </h4>
+          <p style={{ textAlign: "center" }}>
+            I'm a nerd basically, but check out the projects I make on my free
+            time!
+          </p>
           <br />
-          <p>Check out my projects! Fun! Learning!</p>
           <div className="row">
             <div className="col-6">
               <div style={{ textAlign: "center" }}>

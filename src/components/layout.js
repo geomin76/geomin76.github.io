@@ -60,14 +60,32 @@ const Layout = props => {
         </div>
       </main>
       <footer className="site-foot">
-        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Built with{" "}
-        <a
-          href="https://gatsbyjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Gatsby
+        <a href="https://github.com/geomin76" target="_blank">
+          <img
+            style={{ height: 55, paddingRight: 5, paddingLeft: 5 }}
+            src="https://cdn4.iconfinder.com/data/icons/miu-social/60/github-social-media-512.png"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/geomin76/" target="_blank">
+          <img
+            style={{ height: 45, paddingRight: 5, paddingLeft: 5 }}
+            src="https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_Instagram-Outline-512.png"
+          />
+        </a>
+
+        <a href="https://twitter.com/geomin76" target="_blank">
+          <img
+            style={{ height: 55, paddingRight: 5, paddingLeft: 5 }}
+            src="https://cdn4.iconfinder.com/data/icons/miu-social/60/twitter-social-media-512.png"
+          />
+        </a>
+
+        <a href="https://www.linkedin.com/in/geomin76/" target="_blank">
+          <img
+            style={{ height: 34, paddingRight: 5, paddingLeft: 5 }}
+            src="https://cdn0.iconfinder.com/data/icons/global-top-brands/430/linkedin-logo-1-512.png"
+          />
         </a>
       </footer>
     </div>

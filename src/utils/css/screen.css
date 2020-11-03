@@ -104,6 +104,12 @@ body {
   }
 }
 
+.page-head-title2 {
+  margin: 0;
+  font-size: 3.7rem;
+  color: var(--color-base);
+}
+
 .page-head-description {
   margin: 0 0 1.6vw;
   color: color(var(--color-border) l(-20%));
