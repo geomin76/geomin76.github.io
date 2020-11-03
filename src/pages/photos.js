@@ -95,6 +95,42 @@ const PhotosPage = ({ data }, location) => {
                 </p>
               </div>
             </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.eight.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Barney's Wall, Virginia / November 2017
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.ten.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Peyto Lake, Canada / August 2018
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.twelve.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Snoqualmie Pass, Washington / January 2019
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.nine.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Virginia / March 2017
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -159,6 +195,38 @@ const indexQuery = graphql`
     }
 
     seven: file(relativePath: { eq: "7.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    eight: file(relativePath: { eq: "8.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    nine: file(relativePath: { eq: "9.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    ten: file(relativePath: { eq: "10.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    twelve: file(relativePath: { eq: "12.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
