@@ -8,6 +8,11 @@ import SEO from "../components/seo"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
+import flightSearcher from "../../content/assets/flightsearcher.gif"
+import photoBooth from "../../content/assets/photobooth.gif"
+import hikingForHokies from "../../content/assets/hikingforhokies.gif"
+import spotifyForYou from "../../content/assets/spotifyforyou.gif"
+
 const ProjectPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
 
@@ -33,6 +38,11 @@ const ProjectPage = ({ data }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <h4 id="this-is-a-sub-section">Cheap flight searcher</h4>
+                <p style={{ fontSize: 17, lineHeight: 1.5 }}>
+                  A travel tool that finds cheapest flights to a specific
+                  destination from airports near you
+                </p>
+                <img style={{ padding: 7 }} src={flightSearcher} />
                 <p style={{ fontSize: 13, lineHeight: 1.5 }}>
                   Built with JavaScript, MongoDB, ExpressJS, AngularJS, NodeJS,
                   Skyscanner API and Google Places API
@@ -61,6 +71,11 @@ const ProjectPage = ({ data }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <h4 id="this-is-a-sub-section">Spotify for you</h4>
+                <p style={{ fontSize: 17, lineHeight: 1.5 }}>
+                  Create playlists, learn about your music and discover new
+                  music through Spotify
+                </p>
+                <img style={{ padding: 7 }} src={spotifyForYou} />
                 <p style={{ fontSize: 13, lineHeight: 1.5 }}>
                   Built with Python, Flask and Spotify API
                 </p>
@@ -85,6 +100,11 @@ const ProjectPage = ({ data }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <h4 id="this-is-a-sub-section">Photobooth</h4>
+                <p style={{ fontSize: 17, lineHeight: 1.5 }}>
+                  A Raspberry Pi photobooth application that takes photos and
+                  uploads to Google Photos
+                </p>
+                <img style={{ padding: 7 }} src={photoBooth} />
                 <p style={{ fontSize: 13, lineHeight: 1.5 }}>
                   Built with Python, Flask and Google Photos API
                 </p>
@@ -127,6 +147,11 @@ const ProjectPage = ({ data }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <h4 id="this-is-a-sub-section">Hiking for Hokies</h4>
+                <p style={{ fontSize: 17, lineHeight: 1.5 }}>
+                  A web application that provides hiking locations for Virginia
+                  Tech students
+                </p>
+                <img style={{ padding: 7 }} src={hikingForHokies} />
                 <p style={{ fontSize: 13, lineHeight: 1.5 }}>
                   Built with JavaScript, ExpressJS, NodeJS, ReactJS, MongoDB and
                   Google Maps API
@@ -152,6 +177,10 @@ const ProjectPage = ({ data }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <h4 id="this-is-a-sub-section">PiLapse</h4>
+                <p style={{ fontSize: 17, lineHeight: 1.5 }}>
+                  A Raspberry Pi Python command line tool that records, compiles
+                  and emails timelapse video clips
+                </p>
                 <p style={{ fontSize: 13, lineHeight: 1.5 }}>
                   Built with Python
                 </p>
@@ -163,21 +192,6 @@ const ProjectPage = ({ data }, location) => {
                 </a>
               </div>
             </div>
-
-            {/* 
-            TEMPLATE ONE
-            <div className="col-6">
-              <div style={{ textAlign: "center" }}>
-                <h4 id="this-is-a-sub-section">Recipebook</h4>
-                <p style={{ fontSize: 13, lineHeight: 1.5 }}>Built with JavaScript, GatsbyJS and React</p>
-                <a href="https://agrecipebook.netlify.app/" target="_blank">
-                  <img style={{ height: 35, paddingRight: 10 }} src="https://static.thenounproject.com/png/1193102-200.png"/>
-                </a>
-                <a href="https://github.com/geomin76/recipebook" target="_blank">
-                  <img style={{ height: 28, paddingLeft: 10 }} src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg"/>
-                </a>
-              </div>
-            </div> */}
           </div>
         </div>
       </article>
@@ -190,31 +204,6 @@ const indexQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    smallPic: file(
-      relativePath: { eq: "fabio-comparelli-696506-unsplash.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    medPic: file(relativePath: { eq: "sophia-valkova-30139-unsplash.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    largePic: file(
-      relativePath: { eq: "vladimir-malyutin-98174-unsplash.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
       }
     }
   }
