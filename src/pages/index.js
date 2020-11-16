@@ -26,7 +26,7 @@ const BlogIndex = ({ data }, location) => {
           <br />
           <p style={{ textAlign: "center", fontSize: 20, lineHeight: 1.5 }}>
             I'm a software developer in Raleigh NC, avid traveler, fan of the
-            outdoors, hobby photographer and enjoyer of foods
+            outdoors and hobby photographer
           </p>
         </header>
       )}

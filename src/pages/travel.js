@@ -23,6 +23,7 @@ const TravelPage = ({ data }, location) => {
           <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
             Travels
           </h2>
+          <p style={{ textAlign: "center" }}>I like traveling</p>
         </div>
       </article>
     </Layout>
