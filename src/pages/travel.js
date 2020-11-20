@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import GoogleMap from "../components/googleMaps"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -26,6 +27,7 @@ const TravelPage = ({ data }, location) => {
           <p style={{ textAlign: "center" }}>I like traveling</p>
         </div>
       </article>
+      <GoogleMap></GoogleMap>
     </Layout>
   )
 }
