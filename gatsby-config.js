@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        allowList: ["API_KEY", "QUERY_URL"],
+        allowList: ["GATSBY_API_KEY", "GATSBY_QUERY_URL"],
       },
     },
     {
