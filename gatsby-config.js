@@ -31,6 +31,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-plugin-env-variables`,
+            options: {
+              allowList: ["API_KEY", "QUERY_URL"],
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1360,
