@@ -13,6 +13,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["API_KEY", "QUERY_URL"],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -30,12 +36,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          {
-            resolve: `gatsby-plugin-env-variables`,
-            options: {
-              allowList: ["API_KEY", "QUERY_URL"],
-            },
-          },
           {
             resolve: `gatsby-remark-images`,
             options: {
