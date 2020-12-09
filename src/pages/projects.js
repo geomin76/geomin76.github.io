@@ -12,6 +12,7 @@ import flightSearcher from "../../content/assets/flightsearcher.gif"
 import photoBooth from "../../content/assets/photobooth.gif"
 import hikingForHokies from "../../content/assets/hikingforhokies.gif"
 import spotifyForYou from "../../content/assets/spotifyforyou.gif"
+import recipeBook from "../../content/assets/recipebook.gif"
 
 const ProjectPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -123,6 +124,11 @@ const ProjectPage = ({ data }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <h4 id="this-is-a-sub-section">Recipebook</h4>
+                <p style={{ fontSize: 17, lineHeight: 1.5 }}>
+                  A fun and simple app where I can store my recipes as well as
+                  share them.
+                </p>
+                <img style={{ padding: 7 }} src={recipeBook} />
                 <p style={{ fontSize: 13, lineHeight: 1.5 }}>
                   Built with JavaScript, GatsbyJS and React
                 </p>
