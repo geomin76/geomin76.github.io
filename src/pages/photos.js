@@ -23,14 +23,12 @@ const PhotosPage = ({ data }, location) => {
           <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
             Photography
           </h2>
-          <p>
-            I picked up a camera in 2011, and I haven't stopped taking photos
-            since then.
-          </p>
-          <p>
-            Photography has been a lovely opportunity to capture memories,
-            lalala
-          </p>
+          <div style={{ textAlign: "center" }}>
+            <p>
+              I picked up a camera in 2011, and I haven't stopped taking photos
+              since then.
+            </p>
+          </div>
 
           <div class="row">
             <div className="col-6">
@@ -131,6 +129,96 @@ const PhotosPage = ({ data }, location) => {
                 </p>
               </div>
             </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.thirteen.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Angel's Landing, Utah | March 2019
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.fourteen.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Moraine Lake, Canada | October 2019
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.fifteen.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Fireflies in Virginia / June 2018
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.sixteen.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Bryce Canyon National Park, Utah / March 2019
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.seventeen.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Blue Lake, Colorado / July 2018
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.eighteen.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  New Mexico / July 2015
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.nineteen.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  White Sand National Park, New Mexico / November 2020
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.twentyone.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Mt. Ida, Colorado / October 2020
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.twenty.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Hocking Hills State Park, Ohio / May 2019
+                </p>
+              </div>
+            </div>
+
+            <div className="col-6">
+              <div style={{ textAlign: "center" }}>
+                <Img fluid={data.twentytwo.childImageSharp.fluid} />
+                <p style={{ fontSize: 13, lineHeight: 3 }}>
+                  Mirador Condor, Chile / January 2020
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -227,6 +315,86 @@ const indexQuery = graphql`
     }
 
     twelve: file(relativePath: { eq: "12.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    thirteen: file(relativePath: { eq: "13.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    fourteen: file(relativePath: { eq: "14.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    fifteen: file(relativePath: { eq: "15.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    sixteen: file(relativePath: { eq: "16.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    seventeen: file(relativePath: { eq: "17.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    eighteen: file(relativePath: { eq: "18.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    nineteen: file(relativePath: { eq: "19.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    twenty: file(relativePath: { eq: "20.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    twentyone: file(relativePath: { eq: "21.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    twentytwo: file(relativePath: { eq: "22.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
