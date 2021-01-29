@@ -30,14 +30,41 @@ const GradPage = ({ data, scrollPosition }, location) => {
             {/* About me */}
             Grad Photos!
           </h2>
-          <p style={{ textAlign: "center" }}>Hi! My name is Geo Min!</p>
           <p style={{ textAlign: "center" }}>
-            I'm a 2020 Virginia Tech graduate, and I'm going to be taking
-            graduation photos!!
+            Hi! My name is Geo Min! I'm a 2020 Virginia Tech graduate, and I'm
+            going to be taking graduation photos!!
           </p>
           <p style={{ textAlign: "center" }}>
             My prices are $75 / hour for individual, and please contact me for
-            group pricing!
+            group pricing! The price will vary based on size of the group!
+            <br></br> (Contact info:{" "}
+            <a href="mailto:geomin76@gmail.com" target="_blank">
+              Email
+            </a>
+            ,{" "}
+            <a href="https://www.instagram.com/geomin76/" target="_blank">
+              Instagram
+            </a>
+            ,{" "}
+            <a href="https://twitter.com/geomin76" target="_blank">
+              Twitter
+            </a>
+            )
+          </p>
+          <p style={{ textAlign: "center", fontSize: "15px" }}>
+            (P.S. I'm not putting a "limit" on the amount of photos you get, I
+            think that's WACK!!! It'll be just an hour of fun shooting and
+            getting the pics YOU want)
+          </p>
+          <p style={{ textAlign: "center" }}>
+            If you're interested, fill out this{" "}
+            <a href="https://forms.gle/nQk62WXtzkN62SUg7" target="_blank">
+              form here!
+            </a>
+          </p>
+          <p style={{ textAlign: "center" }}>
+            If you want to see my previous work with other clients, take a look
+            below!
           </p>
 
           <div class="row">
@@ -407,6 +434,66 @@ const GradPage = ({ data, scrollPosition }, location) => {
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200407-IMG_5824.jpg"
+                />
+              </div>
+            </div>
+
+            <div className="col-4">
+              <div style={{ textAlign: "center" }}>
+                <LazyLoadImage
+                  effect="blur"
+                  scrollPosition={scrollPosition}
+                  src="https://senior-pics.s3.amazonaws.com/20200428-IMG_0610.jpg"
+                />
+              </div>
+            </div>
+
+            <div className="col-4">
+              <div style={{ textAlign: "center" }}>
+                <LazyLoadImage
+                  effect="blur"
+                  scrollPosition={scrollPosition}
+                  src="https://senior-pics.s3.amazonaws.com/20200504-IMG_3921.jpg"
+                />
+              </div>
+            </div>
+
+            <div className="col-4">
+              <div style={{ textAlign: "center" }}>
+                <LazyLoadImage
+                  effect="blur"
+                  scrollPosition={scrollPosition}
+                  src="https://senior-pics.s3.amazonaws.com/20200506-IMG_5159.jpg"
+                />
+              </div>
+            </div>
+
+            <div className="col-4">
+              <div style={{ textAlign: "center" }}>
+                <LazyLoadImage
+                  effect="blur"
+                  scrollPosition={scrollPosition}
+                  src="https://senior-pics.s3.amazonaws.com/20200507-IMG_5386.jpg"
+                />
+              </div>
+            </div>
+
+            <div className="col-4">
+              <div style={{ textAlign: "center" }}>
+                <LazyLoadImage
+                  effect="blur"
+                  scrollPosition={scrollPosition}
+                  src="https://senior-pics.s3.amazonaws.com/20200512-IMG_8414.jpg"
+                />
+              </div>
+            </div>
+
+            <div className="col-4">
+              <div style={{ textAlign: "center" }}>
+                <LazyLoadImage
+                  effect="blur"
+                  scrollPosition={scrollPosition}
+                  src="https://senior-pics.s3.amazonaws.com/20200514-IMG_0453.jpg"
                 />
               </div>
             </div>
