@@ -13,12 +13,16 @@ const AboutPage = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="About" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+      <SEO
+        title="Grad Photos"
+        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+      />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-            About me
+            {/* About me */}
+            Grad Photos!
           </h2>
           <p style={{ textAlign: "center" }}>Hi! My name is Geo Min!</p>
         </div>
