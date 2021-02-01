@@ -1,7 +1,5 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -9,7 +7,6 @@ import {
   LazyLoadImage,
   trackWindowScroll,
 } from "react-lazy-load-image-component"
-import "react-lazy-load-image-component/src/effects/blur.css"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -67,10 +64,11 @@ const GradPage = ({ data, scrollPosition }, location) => {
             below!
           </p>
 
-          <div class="row">
+          <div className="row">
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200504-IMG_4131.jpg"
@@ -81,6 +79,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20191023-IMG_9609.jpg"
@@ -91,6 +90,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20191025-IMG_9948.jpg"
@@ -101,6 +101,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200403-IMG_4663.jpg"
@@ -111,6 +112,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200403-IMG_4919.jpg"
@@ -121,6 +123,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200404-IMG_5410.jpg"
@@ -131,6 +134,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200404-IMG_5418.jpg"
@@ -141,6 +145,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200410-IMG_6181.jpg"
@@ -151,6 +156,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200414-IMG_7599.jpg"
@@ -161,6 +167,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200427-IMG_0493.jpg"
@@ -171,6 +178,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200427-IMG_9809.jpg"
@@ -181,6 +189,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200419-IMG_9013.jpg"
@@ -191,6 +200,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200501-IMG_1644.jpg"
@@ -201,6 +211,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200503-IMG_2124.jpg"
@@ -211,6 +222,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200427-IMG_9925.jpg"
@@ -221,6 +233,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200501-IMG_1794.jpg"
@@ -231,6 +244,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200503-IMG_2706.jpg"
@@ -241,6 +255,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20191023-IMG_9541.jpg"
@@ -251,6 +266,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200504-IMG_5110.jpg"
@@ -261,6 +277,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200503-IMG_2720.jpg"
@@ -271,6 +288,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200503-IMG_3029.jpg"
@@ -281,6 +299,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200507-IMG_5861.jpg"
@@ -291,6 +310,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200507-IMG_6145.jpg"
@@ -301,6 +321,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200509-IMG_7393.jpg"
@@ -311,6 +332,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200504-IMG_3682.jpg"
@@ -321,6 +343,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200509-IMG_7266.jpg"
@@ -331,6 +354,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200512-IMG_8390.jpg"
@@ -341,6 +365,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="240px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200512-IMG_8534.jpg"
@@ -351,6 +376,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200510-IMG_7598.jpg"
@@ -361,6 +387,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200511-IMG_7938.jpg"
@@ -371,6 +398,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200512-IMG_8781.jpg"
@@ -381,6 +409,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200513-IMG_9443.jpg"
@@ -391,6 +420,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200513-IMG_9456.jpg"
@@ -401,6 +431,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200514-IMG_0329.jpg"
@@ -411,6 +442,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200516-IMG_0678.jpg"
@@ -421,6 +453,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200517-IMG_0833.jpg"
@@ -431,6 +464,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200407-IMG_5824.jpg"
@@ -441,6 +475,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200428-IMG_0610.jpg"
@@ -451,6 +486,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200504-IMG_3921.jpg"
@@ -461,6 +497,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200506-IMG_5159.jpg"
@@ -471,6 +508,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200507-IMG_5386.jpg"
@@ -481,6 +519,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200512-IMG_8414.jpg"
@@ -491,6 +530,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             <div className="col-4">
               <div style={{ textAlign: "center" }}>
                 <LazyLoadImage
+                  height="340px"
                   effect="blur"
                   scrollPosition={scrollPosition}
                   src="https://senior-pics.s3.amazonaws.com/20200514-IMG_0453.jpg"
