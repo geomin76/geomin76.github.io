@@ -54,9 +54,12 @@ const GradPage = ({ data, scrollPosition }, location) => {
             getting the pics YOU want)
           </p>
           <p style={{ textAlign: "center" }}>
-            If you're interested, fill out this{" "}
-            <a href="https://forms.gle/nQk62WXtzkN62SUg7" target="_blank">
-              form here!
+            If you're interested, book an{" "}
+            <a
+              href="https://square.site/book/DCNWRYF7M0W93/geo-min"
+              target="_blank"
+            >
+              appointment here!
             </a>
           </p>
           <p style={{ textAlign: "center" }}>
