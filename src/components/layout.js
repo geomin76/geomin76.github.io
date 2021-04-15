@@ -48,8 +48,8 @@ const Layout = props => {
                 <Link to={`/photos`}>Photography</Link>
               </li>
               <li className="nav-about" role="menuitem">
-                {/* <Link to={`/about`}>About</Link> */}
-                <Link to={`/grad-photos`}>Graduation</Link>
+                <Link to={`/about`}>About</Link>
+                {/* <Link to={`/grad-photos`}>Graduation</Link> */}
               </li>
             </ul>
           </nav>

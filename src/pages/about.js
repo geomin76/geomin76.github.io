@@ -21,8 +21,7 @@ const AboutPage = ({ data }, location) => {
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-            {/* About me */}
-            Grad Photos!
+            About me
           </h2>
           <p style={{ textAlign: "center" }}>Hi! My name is Geo Min!</p>
         </div>
