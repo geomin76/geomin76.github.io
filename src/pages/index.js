@@ -26,23 +26,10 @@ const BlogIndex = ({ data }, location) => {
           <br />
           <p style={{ textAlign: "center", fontSize: 20, lineHeight: 1.5 }}>
             I'm a software developer in Raleigh NC, avid traveler, fan of the
-            outdoors and hobby photographer
+            outdoors and hobby photographer.
           </p>
         </header>
       )}
-      {/* <div className="post-feed">
-        {posts.map(({ node }) => {
-          postCounter++
-          return (
-            <PostCard
-              key={node.fields.slug}
-              count={postCounter}
-              node={node}
-              postClass={`post`}
-            />
-          )
-        })}
-      </div> */}
     </Layout>
   )
 }
