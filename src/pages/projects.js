@@ -80,7 +80,10 @@ const ProjectPage = ({ data }, location) => {
                 <p style={{ fontSize: 13, lineHeight: 1.5 }}>
                   Built with Python, Flask and Spotify API
                 </p>
-                <a href="http://spotifyforyou.com/" target="_blank">
+                <a
+                  href="https://playlist-statistics-267218.appspot.com/"
+                  target="_blank"
+                >
                   <img
                     style={{ height: 35, paddingRight: 10 }}
                     src="https://static.thenounproject.com/png/1193102-200.png"
