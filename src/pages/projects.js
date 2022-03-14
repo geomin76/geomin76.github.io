@@ -8,11 +8,11 @@ import SEO from "../components/seo"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-import flightSearcher from "../../content/assets/flightsearcher.gif"
-import photoBooth from "../../content/assets/photobooth.gif"
-import hikingForHokies from "../../content/assets/hikingforhokies.gif"
-import spotifyForYou from "../../content/assets/spotifyforyou.gif"
-import recipeBook from "../../content/assets/recipebook.gif"
+// import flightSearcher from "../../content/assets/flightsearcher.gif"
+// import photoBooth from "../../content/assets/photobooth.gif"
+// import hikingForHokies from "../../content/assets/hikingforhokies.gif"
+// import spotifyForYou from "../../content/assets/spotifyforyou.gif"
+// import recipeBook from "../../content/assets/recipebook.gif"
 
 const ProjectPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
