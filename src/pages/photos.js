@@ -30,7 +30,7 @@ const PhotosPage = ({ data }, location) => {
             </p>
           </div>
 
-          <div class="row">
+          {/* <div class="row">
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <Img fluid={data.first.childImageSharp.fluid} />
@@ -219,7 +219,7 @@ const PhotosPage = ({ data }, location) => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </article>
     </Layout>

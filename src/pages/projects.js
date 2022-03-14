@@ -27,15 +27,11 @@ const ProjectPage = ({ data }, location) => {
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <h2 id="heading-level-2">Projects</h2>
-          <h4 style={{ textAlign: "center", lineHeight: 0.5 }}>
-            I code for fun!
-          </h4>
-          <p style={{ textAlign: "center" }}>
-            I'm a nerd basically, but check out the projects I make on my free
-            time!
+          <p style={{ textAlign: "center", lineHeight: 0.5 }}>
+            I code for fun and for work!
           </p>
           <br />
-          <div className="row">
+          {/* <div className="row">
             <div className="col-6">
               <div style={{ textAlign: "center" }}>
                 <h4 id="this-is-a-sub-section">Cheap flight searcher</h4>
@@ -201,7 +197,7 @@ const ProjectPage = ({ data }, location) => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </article>
     </Layout>
