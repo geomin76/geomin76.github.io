@@ -1,9 +1,4 @@
 {
   "main.js": "render-page.js",
-  "main.js.map": "render-page.js.map",
-  "static/flightsearcher.gif": "static/flightsearcher-6a3a0e4b2c91ac7846876c1addcafa85.gif",
-  "static/hikingforhokies.gif": "static/hikingforhokies-52666ae33e5fb384b2d03f93c447d406.gif",
-  "static/photobooth.gif": "static/photobooth-b2a919bbb296afbabe7dd72b9910d0db.gif",
-  "static/recipebook.gif": "static/recipebook-365d1936366210ea0770de4d6e7e0051.gif",
-  "static/spotifyforyou.gif": "static/spotifyforyou-49f3cef5c440c3aadedd230b96466186.gif"
+  "main.js.map": "render-page.js.map"
 }
