@@ -32,7 +32,7 @@ const GradPage = ({ data, scrollPosition }, location) => {
             going to be taking graduation photos!!
           </p>
           <p style={{ textAlign: "center" }}>
-            My prices are $75 / hour for individual, and please contact me for
+            My prices are $100 / hour for individual, and please contact me for
             group pricing! The price will vary based on size of the group!
             <br></br> (Contact info:{" "}
             <a href="mailto:geomin76@gmail.com" target="_blank">
@@ -47,11 +47,6 @@ const GradPage = ({ data, scrollPosition }, location) => {
               Twitter
             </a>
             )
-          </p>
-          <p style={{ textAlign: "center", fontSize: "15px" }}>
-            (P.S. I'm not putting a "limit" on the amount of photos you get, I
-            think that's WACK!!! It'll be just an hour of fun shooting and
-            getting the pics YOU want)
           </p>
           <p style={{ textAlign: "center" }}>
             If you're interested, book an{" "}
