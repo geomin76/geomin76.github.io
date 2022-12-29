@@ -75,10 +75,20 @@ const GradGuide = ({ data }, location) => {
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <p style={{ textAlign: "left", fontSize: "16px" }}>
-            If you've got an issue with the page, submit an issue on GitHub
+            If you have content/tips/information you want to contribute to this
+            website,{" "}
+            <a href="mailto: geomin76@gmail.com" target="_blank">
+              please email me here
+            </a>
           </p>
           <p style={{ textAlign: "left", fontSize: "16px" }}>
-            If you've got an issue with the page, submit an issue on GitHub
+            If you have an issue with the page,{" "}
+            <a
+              href="https://github.com/geomin76/geomin76.github.io/issues"
+              target="_blank"
+            >
+              submit an issue on GitHub
+            </a>
           </p>
         </div>
       </article>

@@ -1,5 +1,6 @@
 const urljoin = require("url-join")
 const siteConfig = require("./siteConfig")
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
