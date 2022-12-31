@@ -27,7 +27,7 @@ const TravelPage = ({ data }, location) => {
           <p style={{ textAlign: "center" }}>
             I like traveling and exploring the world!
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p style={{ textAlign: "center", fontSize: "15px" }}>
             Below are all the places I've visited!
           </p>
         </div>
