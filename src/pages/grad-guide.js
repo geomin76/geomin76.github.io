@@ -50,6 +50,9 @@ const GradGuide = ({ data, scrollPosition }, location) => {
             <p style={{ lineHeight: "8px" }}>
               3. <a href="#groupposes">Group poses</a>
             </p>
+            <p style={{ lineHeight: "8px" }}>
+              4. <a href="#champagne">Champagne popping</a>
+            </p>
           </p>
         </div>
         <br />
@@ -160,6 +163,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
               />
             </div>
           </div>
+          <p style={{ textAlign: "left", fontSize: "18px" }}>3. Stoles</p>
         </div>
 
         <div className="post-content-body">
@@ -172,6 +176,13 @@ const GradGuide = ({ data, scrollPosition }, location) => {
         <div className="post-content-body">
           <h2 style={{ textAlign: "left" }} id="groupposes">
             Group poses!
+          </h2>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>info</p>
+        </div>
+
+        <div className="post-content-body">
+          <h2 style={{ textAlign: "left" }} id="champagne">
+            Champagne popping
           </h2>
           <p style={{ textAlign: "left", fontSize: "16px" }}>info</p>
         </div>
