@@ -28,7 +28,7 @@ const TravelPage = ({ data }, location) => {
             I like traveling and exploring the world!
           </p>
           <p style={{ textAlign: "center", fontSize: "15px" }}>
-            Below are all the places I've visited!
+            Below are all the places I've visited from 2013 to the present!
           </p>
         </div>
       </article>
