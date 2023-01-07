@@ -31,7 +31,6 @@ const GradPage = ({ data, scrollPosition }, location) => {
             Hi! My name is Geo Min! I'm a 2020 Virginia Tech graduate, and I'm
             going to be taking graduation photos!!
           </p>
-
           <p style={{ textAlign: "center" }}>
             My prices are $100 / hour for individual, and please contact me for
             group pricing! The price will vary based on size of the group!

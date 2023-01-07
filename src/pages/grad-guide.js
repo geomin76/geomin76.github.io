@@ -64,7 +64,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
             you claim you aren't photogenic or you don't know what poses to do,
             etc...), but it will be okay!
           </p>
-          <p style={{ textAlign: "left", fontSize: "16px " }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             Hopefully this guide will provide insight, and I'm sure any
             photographer you work with has lovely experience and soooo many
             ideas for you 🦫
@@ -177,14 +177,54 @@ const GradGuide = ({ data, scrollPosition }, location) => {
           <h2 style={{ textAlign: "left" }} id="groupposes">
             Group poses!
           </h2>
-          <p style={{ textAlign: "left", fontSize: "16px" }}>info</p>
+          <p style={{ textAlign: "left", fontSize: "14px" }}>info</p>
         </div>
 
         <div className="post-content-body">
           <h2 style={{ textAlign: "left" }} id="champagne">
             Champagne popping
           </h2>
-          <p style={{ textAlign: "left", fontSize: "16px" }}>info</p>
+          <p style={{ textAlign: "left", fontSize: "14px" }}>
+            It may seem scary, but it's actually pretty straightforward so here
+            are some recommended instructions on how to pop champagne and get
+            the good spray for the photo. Also remember to get a CHEAP bottle,
+            because a lot of the champagne flies out during this
+          </p>
+          <p style={{ textAlign: "left", fontSize: "14px" }}>
+            <b>1.</b> DO NOT SHAKE THE BOTTLE! Instead, just open the bottle
+            normally
+          </p>
+          <p style={{ textAlign: "left", fontSize: "14px" }}>
+            <b>2.</b> Position yourself and coordinate with the photographer on
+            what kind of shot you want! You can look at various examples at the{" "}
+            <a href="#poses">Poses section</a>, Pinterest, Google, Instagram,
+            etc... you can also find group champagne photo inspiration at{" "}
+            <a href="#groupposes">Group Poses section</a> or also the internet
+          </p>
+          <div className="row">
+            <div className="col-6">
+              <p style={{ textAlign: "left", fontSize: "14px" }}>
+                <b>3.</b> Now shake the bottle! And at the bottle top, if you
+                want a good champagne spray, I recommend putting your finger
+                like so:
+              </p>
+              <p style={{ textAlign: "left", fontSize: "14px" }}>
+                The bottle is slippery and a lot is going on, so I recommend
+                using two hands to hold the bottle! But have fun and it's such a
+                fun thing to do, and now you know how to spray champagne!
+              </p>
+            </div>
+            <div className="col-6">
+              <LazyLoadImage
+                effect="blur"
+                scrollPosition={scrollPosition}
+                src="https://i.pinimg.com/originals/6b/6f/89/6b6f89d0013d535c808cb096c3138e0f.jpg"
+              />
+            </div>
+          </div>
+          <p style={{ textAlign: "left", fontSize: "14px" }}>
+            <b>4.</b> After, (and up to you) you can get a "drinking" photo too!
+          </p>
         </div>
       </article>
       <article className="post-content page-template no-image">
