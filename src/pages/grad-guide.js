@@ -11,9 +11,16 @@ import {
   LazyLoadImage,
   trackWindowScroll,
 } from "react-lazy-load-image-component"
+import Carousel from "../components/carousel"
 
 const GradGuide = ({ data, scrollPosition }, location) => {
   const siteTitle = data.site.siteMetadata.title
+
+  const images = [
+    "https://senior-pics.s3.amazonaws.com/FB_IMG_1525631331597.jpg",
+    "https://senior-pics.s3.amazonaws.com/20200512-IMG_8534.jpg",
+    "https://senior-pics.s3.amazonaws.com/20200408-IMG_6018.jpg",
+  ]
 
   return (
     <Layout title={siteTitle}>
@@ -225,7 +232,14 @@ const GradGuide = ({ data, scrollPosition }, location) => {
           <h2 style={{ textAlign: "left" }} id="poses">
             Poses!
           </h2>
-          <p style={{ textAlign: "left", fontSize: "16px" }}>info</p>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
+            Click or scroll through this slideshow to see various poses!
+          </p>
+          <div className="row">
+            <div className="col-12">
+              <Carousel images={images} />
+            </div>
+          </div>
         </div>
 
         <div className="post-content-body">
