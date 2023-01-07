@@ -163,7 +163,62 @@ const GradGuide = ({ data, scrollPosition }, location) => {
               />
             </div>
           </div>
-          <p style={{ textAlign: "left", fontSize: "18px" }}>3. Stoles</p>
+          <p style={{ textAlign: "left", fontSize: "18px" }}>
+            3. Stoles and cords (if applicable)
+          </p>
+          <p style={{ textAlign: "left", fontSize: "14px" }}>
+            Stoles and cords are also straightforward, but still some info to
+            know!
+          </p>
+          <div className="row">
+            <div className="col-6">
+              <p style={{ textAlign: "left", fontSize: "14px" }}>
+                You can wear your stoles and cords over your suit/dress/whatever
+                you're wearing like so:
+              </p>
+              <p style={{ textAlign: "left", fontSize: "14px" }}>
+                Also if you have 2+ stoles, notice how in this photo she is
+                using both, so you can hang both stoles over your shoulders if
+                you want to show off two stoles!
+              </p>
+            </div>
+            <div className="col-6">
+              <LazyLoadImage
+                effect="blur"
+                scrollPosition={scrollPosition}
+                src="https://senior-pics.s3.amazonaws.com/20200408-IMG_6018.jpg"
+              />
+            </div>
+            <div className="col-6">
+              <p style={{ textAlign: "left", fontSize: "14px" }}>
+                Otherwise if you have one stole, you can do it like so over your
+                dress/suit/whatever you're wearing:
+              </p>
+            </div>
+            <div className="col-6">
+              <LazyLoadImage
+                effect="blur"
+                scrollPosition={scrollPosition}
+                src="https://senior-pics.s3.amazonaws.com/20200512-IMG_8534.jpg"
+              />
+            </div>
+            <div className="col-6">
+              <p style={{ textAlign: "left", fontSize: "14px" }}>
+                Or you can wear it over the gown too like so:
+              </p>
+              <p style={{ textAlign: "left", fontSize: "14px" }}>
+                Remember you can do multiple photos with the photographer! So
+                you can do both of course
+              </p>
+            </div>
+            <div className="col-6">
+              <LazyLoadImage
+                effect="blur"
+                scrollPosition={scrollPosition}
+                src="https://senior-pics.s3.amazonaws.com/FB_IMG_1525631331597.jpg"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="post-content-body">
