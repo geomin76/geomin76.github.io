@@ -33,6 +33,22 @@ const PhotosPage = ({ data, scrollPosition }, location) => {
               I picked up a camera in 2011, and I haven't stopped taking photos
               since then.
             </p>
+            <p>
+              Photos taken with either a{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Canon_EOS_5D_Mark_II"
+                target="_blank"
+              >
+                Canon 5D Mark II
+              </a>{" "}
+              or{" "}
+              <a
+                href="https://electronics.sony.com/imaging/interchangeable-lens-cameras/full-frame/p/ilce7m2-b"
+                target="_blank"
+              >
+                Sony Alpha A7II
+              </a>
+            </p>
             <p style={{ fontSize: "13px" }}>
               (I'm continually adding and removing photos from this, whenever I
               can...)
