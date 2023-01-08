@@ -236,6 +236,17 @@ const GradGuide = ({ data, scrollPosition }, location) => {
             Click or scroll through this slideshow to see various poses!
           </p>
           <div className="row">
+            <p style={{ textAlign: "left", fontSize: "16px" }}>Normal poses:</p>
+            <div className="col-12">
+              <Carousel images={images} />
+            </div>
+          </div>
+          <br />
+          <br />
+          <div className="row">
+            <p style={{ textAlign: "left", fontSize: "16px" }}>
+              Champagne poses:
+            </p>
             <div className="col-12">
               <Carousel images={images} />
             </div>

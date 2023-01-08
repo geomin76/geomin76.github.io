@@ -24,7 +24,7 @@ export default function Carousel({ images }) {
       {images.map(url => {
         return (
           <SwiperSlide>
-            <LazyLoadImage effect="blur" src={url} />
+            <img src={url} />
           </SwiperSlide>
         )
       })}
