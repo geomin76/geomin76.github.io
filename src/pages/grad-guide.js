@@ -11,7 +11,7 @@ import {
   LazyLoadImage,
   trackWindowScroll,
 } from "react-lazy-load-image-component"
-import Carousel from "../components/carousel"
+import PhotoCarousel from "../components/photocarousel"
 
 const GradGuide = ({ data, scrollPosition }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -358,7 +358,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
               <b>Normal poses:</b>
             </p>
             <div className="col-12">
-              <Carousel images={normalImages} />
+              <PhotoCarousel images={normalImages} />
             </div>
           </div>
           <br />
@@ -368,7 +368,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
               <b>Champagne poses:</b>
             </p>
             <div className="col-12">
-              <Carousel images={champagneImages} />
+              <PhotoCarousel images={champagneImages} />
             </div>
           </div>
         </div>
@@ -379,7 +379,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
           </h2>
           <div className="row">
             <div className="col-12">
-              <Carousel images={groupImages} />
+              <PhotoCarousel images={groupImages} />
             </div>
           </div>
         </div>
