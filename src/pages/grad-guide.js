@@ -17,127 +17,584 @@ const GradGuide = ({ data, scrollPosition }, location) => {
   const siteTitle = data.site.siteMetadata.title
 
   const normalImages = [
-    "https://senior-pics.s3.amazonaws.com/FB_IMG_1525631331597.jpg",
-    "https://senior-pics.s3.amazonaws.com/20200408-IMG_6018.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210412-IMG_3342.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200504-IMG_4867.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200509-IMG_6811.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200512-IMG_9027.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200325-IMG_3482.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210412-IMG_3223.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200427-IMG_9809.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220423-IMG_8546.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200504-IMG_4131.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200501-IMG_1873.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210417-IMG_6343.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200404-IMG_5410.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200403-IMG_4736.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3550.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200404-IMG_5415.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20191106-IMG_1316.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220422-IMG_7299.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200517-IMG_0800.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220610-IMG_9436.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3870.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210417-IMG_5201.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210412-DSC07916.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200516-IMG_0641.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210411-IMG_2146.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200513-IMG_9456.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_5448.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210427-IMG_7385.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_5716.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200512-IMG_8781.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200705-DSC03152.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_6142.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_5857.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200419-IMG_9013.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200512-IMG_8988.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220423-IMG_8058.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200503-IMG_2706.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200422-IMG_9673.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200501-IMG_1836.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200410-IMG_6239.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200411-IMG_6701.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3760.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200326-IMG_3680.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200403-IMG_4937.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200328-IMG_3954.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200328-IMG_4008.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210429-IMG_8278.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210417-IMG_6148.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200503-IMG_2170.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200514-IMG_0547.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3809.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200407-IMG_5824.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220422-IMG_7440.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200513-IMG_9403.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20191023-IMG_9541.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200421-IMG_9197.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/cjmtorgpic.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3765.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210521-DSC09344.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_6052.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210417-IMG_5719.jpg",
+    {
+      original: "https://senior-pics.s3.amazonaws.com/FB_IMG_1525631331597.jpg",
+      loading: "lazy",
+    },
+    {
+      original: "https://senior-pics.s3.amazonaws.com/20200408-IMG_6018.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210412-IMG_3342.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200504-IMG_4867.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200509-IMG_6811.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200512-IMG_9027.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200325-IMG_3482.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210412-IMG_3223.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200427-IMG_9809.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220423-IMG_8546.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200504-IMG_4131.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200501-IMG_1873.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210417-IMG_6343.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200404-IMG_5410.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200403-IMG_4736.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3550.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200404-IMG_5415.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20191106-IMG_1316.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220422-IMG_7299.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200517-IMG_0800.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220610-IMG_9436.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3870.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210417-IMG_5201.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210412-DSC07916.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200516-IMG_0641.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210411-IMG_2146.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200513-IMG_9456.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_5448.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210427-IMG_7385.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_5716.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200512-IMG_8781.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200705-DSC03152.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_6142.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_5857.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200419-IMG_9013.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200512-IMG_8988.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220423-IMG_8058.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200503-IMG_2706.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200422-IMG_9673.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200501-IMG_1836.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200410-IMG_6239.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200411-IMG_6701.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3760.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200326-IMG_3680.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200403-IMG_4937.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200328-IMG_3954.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200328-IMG_4008.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210429-IMG_8278.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210417-IMG_6148.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200503-IMG_2170.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200514-IMG_0547.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3809.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200407-IMG_5824.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20220422-IMG_7440.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200513-IMG_9403.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20191023-IMG_9541.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200421-IMG_9197.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/cjmtorgpic.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210413-IMG_3765.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210521-DSC09344.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200507-IMG_6052.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210417-IMG_5719.jpg",
+      loading: "lazy",
+    },
   ]
 
   const champagneImages = [
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210411-IMG_2524.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200421-IMG_9371.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200507-IMG_6075.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210417-IMG_6223.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200503-IMG_2718.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200509-IMG_7389.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210427-DSC08839.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200512-IMG_8376.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20220423-IMG_8089.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200509-IMG_6855.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210417-IMG_6661.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20220420-DSC06744.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20191023-IMG_9750.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210411-IMG_2922.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200504-IMG_4248.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200705-DSC03242.jpg",
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210411-IMG_2524.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200421-IMG_9371.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200507-IMG_6075.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210417-IMG_6223.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200503-IMG_2718.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200509-IMG_7389.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210427-DSC08839.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200512-IMG_8376.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20220423-IMG_8089.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200509-IMG_6855.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210417-IMG_6661.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20220420-DSC06744.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20191023-IMG_9750.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210411-IMG_2922.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200504-IMG_4248.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200705-DSC03242.jpg",
+      loading: "lazy",
+    },
   ]
 
   const groupImages = [
-    "https://senior-pics.s3.amazonaws.com/20200512-IMG_8534.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200427-IMG_9969.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210417-IMG_4796.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20191023-IMG_9606.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200501-IMG_1640.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20220420-DSC06673.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200504-IMG_4685.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20220419-IMG_5945.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200501-IMG_1691.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210417-IMG_6351.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_3038.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200705-DSC03303.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_2963.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_3089.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210416-IMG_4486.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200427-IMG_0253.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_3111.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200514-IMG_9858.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200428-IMG_0613.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_2608.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_2740.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210429-DSC09236.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200514-IMG_0329.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210417-IMG_6520.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200427-IMG_0462.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200503-IMG_3037.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200514-IMG_9500.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210521-DSC09457.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20191106-IMG_1156.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200517-IMG_0843.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200507-IMG_6145.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200503-IMG_2589.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_2713.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200413-IMG_7177.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20220420-IMG_6552.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200507-IMG_6085.jpg",
-    "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200509-IMG_6808.jpg",
+    {
+      original: "https://senior-pics.s3.amazonaws.com/20200512-IMG_8534.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200427-IMG_9969.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210417-IMG_4796.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20191023-IMG_9606.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200501-IMG_1640.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20220420-DSC06673.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200504-IMG_4685.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20220419-IMG_5945.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200501-IMG_1691.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210417-IMG_6351.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_3038.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200705-DSC03303.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_2963.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_3089.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210416-IMG_4486.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200427-IMG_0253.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_3111.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200514-IMG_9858.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200428-IMG_0613.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_2608.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_2740.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210429-DSC09236.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200514-IMG_0329.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210417-IMG_6520.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200427-IMG_0462.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200503-IMG_3037.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200514-IMG_9500.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210521-DSC09457.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20191106-IMG_1156.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200517-IMG_0843.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200507-IMG_6145.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200503-IMG_2589.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20210411-IMG_2713.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200413-IMG_7177.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20220420-IMG_6552.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200507-IMG_6085.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200509-IMG_6808.jpg",
+      loading: "lazy",
+    },
   ]
 
   return (
@@ -378,7 +835,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
             Group poses!
           </h2>
           <div className="row">
-            <div className="col-12">
+            <div className="col-12" style={{}}>
               <PhotoCarousel images={groupImages} />
             </div>
           </div>
