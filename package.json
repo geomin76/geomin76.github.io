@@ -8,6 +8,10 @@
     "url": "https://github.com/ImedAdel/gatsby-london/issues"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.3",
     "dotenv": "^16.0.3",
     "gatsby": "^2.4.2",
     "gatsby-cli": "^2.14.0",
@@ -37,7 +41,6 @@
     "react-helmet": "^5.2.1",
     "react-image-gallery": "^1.2.11",
     "react-lazy-load-image-component": "^1.5.1",
-    "react-responsive-carousel": "^3.2.23",
     "typeface-alegreya": "^0.0.69",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",

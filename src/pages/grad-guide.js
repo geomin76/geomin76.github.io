@@ -18,21 +18,13 @@ const GradGuide = ({ data, scrollPosition }, location) => {
 
   const normalImages = [
     {
-      original: "https://senior-pics.s3.amazonaws.com/FB_IMG_1525631331597.jpg",
-      loading: "lazy",
-    },
-    {
-      original: "https://senior-pics.s3.amazonaws.com/20200408-IMG_6018.jpg",
+      original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200504-IMG_4867.jpg",
       loading: "lazy",
     },
     {
       original:
         "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20210412-IMG_3342.jpg",
-      loading: "lazy",
-    },
-    {
-      original:
-        "https://senior-pics.s3.amazonaws.com/grad+pics/normal/20200504-IMG_4867.jpg",
       loading: "lazy",
     },
     {
@@ -330,6 +322,11 @@ const GradGuide = ({ data, scrollPosition }, location) => {
   const champagneImages = [
     {
       original:
+        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200512-IMG_8376.jpg",
+      loading: "lazy",
+    },
+    {
+      original:
         "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210411-IMG_2524.jpg",
       loading: "lazy",
     },
@@ -363,11 +360,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
         "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20210427-DSC08839.jpg",
       loading: "lazy",
     },
-    {
-      original:
-        "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20200512-IMG_8376.jpg",
-      loading: "lazy",
-    },
+
     {
       original:
         "https://senior-pics.s3.amazonaws.com/grad+pics/champagne/20220423-IMG_8089.jpg",
@@ -411,10 +404,6 @@ const GradGuide = ({ data, scrollPosition }, location) => {
   ]
 
   const groupImages = [
-    {
-      original: "https://senior-pics.s3.amazonaws.com/20200512-IMG_8534.jpg",
-      loading: "lazy",
-    },
     {
       original:
         "https://senior-pics.s3.amazonaws.com/grad+pics/group/20200427-IMG_9969.jpg",
