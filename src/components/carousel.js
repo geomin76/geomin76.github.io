@@ -1,5 +1,4 @@
 import React from "react"
-import { LazyLoadImage } from "react-lazy-load-image-component"
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper"
 
@@ -19,7 +18,10 @@ export default function Carousel({ images }) {
       scrollbar={{ draggable: true }}
       autoHeight={true}
       loop={true}
+      preloadImages={false}
+      lazy={true}
       centeredSlides={true}
+      showsPagination={false}
     >
       {images.map(url => {
         return (
