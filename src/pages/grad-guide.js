@@ -512,6 +512,9 @@ const GradGuide = ({ data, scrollPosition }, location) => {
             <p style={{ lineHeight: "8px" }}>
               4. <a href="#champagne">Champagne popping</a>
             </p>
+            <p style={{ lineHeight: "8px" }}>
+              5. <a href="#misc">Miscellaneous Notes</a>
+            </p>
           </p>
         </div>
         <br />
@@ -539,7 +542,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
           <h2 style={{ textAlign: "left" }} id="wear">
             How to wear your grad items!
           </h2>
-          <p style={{ textAlign: "left", fontSize: "14px" }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             To note: people generally hate wearing cap/gown in grad photos
             (because it looks bad and the cap is a{" "}
             <a
@@ -551,7 +554,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
             on your head), but it is GRADUATION so make sure to get at least
             some cap/gown photos for the yourself and family!
           </p>
-          <p style={{ textAlign: "left", fontSize: "14px" }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             You can also do a combination of just gown, just cap and cap + gown
             for photos if you hate the whole ensemble
           </p>
@@ -561,7 +564,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
           </p>
           <div className="row">
             <div className="col-6">
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 &nbsp;&nbsp; Wear your graduation cap like so:
               </p>
             </div>
@@ -574,7 +577,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
             </div>
             <br />
             <div className="col-6">
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 &nbsp;&nbsp; Do NOT wear it like this:
               </p>
             </div>
@@ -587,20 +590,20 @@ const GradGuide = ({ data, scrollPosition }, location) => {
             </div>
           </div>
           <br />
-          <p style={{ textAlign: "left", fontSize: "14px" }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             &nbsp;&nbsp;Tassels are worn on the right side, and moved to the
             left after graduation (to be ~ proper ~)
           </p>
           <p style={{ textAlign: "left", fontSize: "18px" }}>
             2. Your graduation gown
           </p>
-          <p style={{ textAlign: "left", fontSize: "14px" }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             Wearing the gown is pretty straightforward, but there are some
             things to note of course!
           </p>
           <div className="row">
             <div className="col-6">
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 Typically, people will want to open their gowns like this in
                 order to show off their dress/button down/suit/etc like so:
               </p>
@@ -613,7 +616,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
               />
             </div>
             <div className="col-6">
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 Also, there is nothing wrong with closing it up! It's all up to
                 you, but always remember you can do alllllll the poses and
                 variations of clothes you want
@@ -630,17 +633,17 @@ const GradGuide = ({ data, scrollPosition }, location) => {
           <p style={{ textAlign: "left", fontSize: "18px" }}>
             3. Stoles and cords (if applicable)
           </p>
-          <p style={{ textAlign: "left", fontSize: "14px" }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             Stoles and cords are also straightforward, but still some info to
             know!
           </p>
           <div className="row">
             <div className="col-6">
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 You can wear your stoles and cords over your suit/dress/whatever
                 you're wearing like so:
               </p>
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 Also if you have 2+ stoles, notice how in this photo she is
                 using both, so you can hang both stoles over your shoulders if
                 you want to show off two stoles!
@@ -654,7 +657,7 @@ const GradGuide = ({ data, scrollPosition }, location) => {
               />
             </div>
             <div className="col-6">
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 Otherwise if you have one stole, you can do it like so over your
                 dress/suit/whatever you're wearing:
               </p>
@@ -667,10 +670,10 @@ const GradGuide = ({ data, scrollPosition }, location) => {
               />
             </div>
             <div className="col-6">
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 Or you can wear it over the gown too like so:
               </p>
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 Remember you can do multiple photos with the photographer! So
                 you can do both of course
               </p>
@@ -727,17 +730,17 @@ const GradGuide = ({ data, scrollPosition }, location) => {
           <h2 style={{ textAlign: "left" }} id="champagne">
             Champagne popping
           </h2>
-          <p style={{ textAlign: "left", fontSize: "14px" }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             It may seem scary, but it's actually pretty straightforward so here
             are some recommended instructions on how to pop champagne and get
             the good spray for the photo. Also remember to get a CHEAP bottle,
             because a lot of the champagne flies out during this
           </p>
-          <p style={{ textAlign: "left", fontSize: "14px" }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             <b>1.</b> DO NOT SHAKE THE BOTTLE! Instead, just open the bottle
             normally
           </p>
-          <p style={{ textAlign: "left", fontSize: "14px" }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             <b>2.</b> Position yourself and coordinate with the photographer on
             what kind of shot you want! You can look at various examples at the{" "}
             <a href="#poses">Poses section</a>, Pinterest, Google, Instagram,
@@ -746,12 +749,12 @@ const GradGuide = ({ data, scrollPosition }, location) => {
           </p>
           <div className="row">
             <div className="col-6">
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 <b>3.</b> Now shake the bottle! And at the bottle top, if you
                 want a good champagne spray, I recommend putting your finger
                 like so:
               </p>
-              <p style={{ textAlign: "left", fontSize: "14px" }}>
+              <p style={{ textAlign: "left", fontSize: "16px" }}>
                 The bottle is slippery and a lot is going on, so I recommend
                 using two hands to hold the bottle! But have fun and it's such a
                 fun thing to do, and now you know how to spray champagne!
@@ -765,8 +768,17 @@ const GradGuide = ({ data, scrollPosition }, location) => {
               />
             </div>
           </div>
-          <p style={{ textAlign: "left", fontSize: "14px" }}>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
             <b>4.</b> After, (and up to you) you can get a "drinking" photo too!
+          </p>
+        </div>
+        <div className="post-content-body">
+          <h2 style={{ textAlign: "left" }} id="misc">
+            Miscellaneous Notes
+          </h2>
+          <p style={{ textAlign: "left", fontSize: "16px" }}>
+            <b>1.</b> Best lighting for photos are times around sunset time
+            (example: 8pm sunset, so 5pm-7pm is best)
           </p>
         </div>
       </article>
