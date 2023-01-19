@@ -58,6 +58,13 @@ const GradPage = ({ data, scrollPosition }, location) => {
             </a>
           </p>
           <p style={{ textAlign: "center" }}>
+            Here's a{" "}
+            <a href="https://geomin.me/grad-guide" target="_blank">
+              fun grad guide I made here
+            </a>
+            , for the grads who don't know what they're doing
+          </p>
+          <p style={{ textAlign: "center" }}>
             If you want to see my previous work with other clients, take a look
             below!
           </p>
