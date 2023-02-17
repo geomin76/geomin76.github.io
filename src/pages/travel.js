@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,6 +7,8 @@ import GoogleMap from "../components/googleMaps"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
+import StatesVisited from "../components/states-visited"
+import CountriesVisited from "../components/countries-visited"
 
 const TravelPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -33,6 +34,32 @@ const TravelPage = ({ data }, location) => {
         </div>
       </article>
       <GoogleMap></GoogleMap>
+      <article className="post-content page-template no-image">
+        <div className="row">
+          <div className="col-6">
+            <h6 style={{ textAlign: "center" }}>50 / 50 states visited</h6>
+            <p style={{ textAlign: "center" }}>
+              Based on most recent visited and followed rule of eating locally
+              and/or doing a local activity
+            </p>
+            <StatesVisited />
+          </div>
+          <div className="col-6">
+            <h6 style={{ textAlign: "center" }}>21 / 195 countries visited</h6>
+            <p style={{ textAlign: "center" }}>
+              Based on most recent visited and followed rule of eating locally
+              and/or doing a local activity
+            </p>
+            <CountriesVisited />
+          </div>
+        </div>
+        <br />
+        <p style={{ textAlign: "center" }}>
+          * layovers, transit through + flying over state/country do not count!
+          <br />
+          Also, I only count what I remember (nothing from my baby/child days)!
+        </p>
+      </article>
     </Layout>
   )
 }
