@@ -7,31 +7,7 @@ import TableContainer from "@mui/material/TableContainer"
 import TableHead from "@mui/material/TableHead"
 import TableRow from "@mui/material/TableRow"
 
-const rows = [
-  { country: "Argentina", visited: "January 2020" },
-  { country: "Bahamas", visited: "January 2016" },
-  { country: "Canada", visited: "October 2019" },
-  { country: "Chile", visited: "January 2020" },
-  { country: "China", visited: "August 2016" },
-  { country: "Finland", visited: "May 2022" },
-  { country: "Iceland", visited: "December 2022" },
-  { country: "Japan", visited: "August 2016" },
-  { country: "Morocco", visited: "November 2018" },
-  { country: "Netherlands", visited: "November 2018" },
-  { country: "Norway", visited: "May 2022" },
-  { country: "Oman", visited: "November 2021" },
-  { country: "Peru", visited: "January 2020" },
-  { country: "Philippines", visited: "December 2018" },
-  { country: "South Korea", visited: "October 2022" },
-  { country: "Spain", visited: "November 2018" },
-  { country: "Sweden", visited: "May 2022" },
-  { country: "United Arab Emirates", visited: "November 2021" },
-  { country: "United Kingdom", visited: "May 2022" },
-  { country: "United States of America", visited: "Present" },
-  { country: "Vietnam", visited: "January 2019" },
-]
-
-export default function CountriesVisited() {
+export default function CountriesVisited({ rows }) {
   return (
     <Paper sx={{ width: "100%", overflow: "hidden" }}>
       <TableContainer sx={{ maxHeight: 300 }}>
