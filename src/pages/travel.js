@@ -120,9 +120,7 @@ const TravelPage = ({ data }, location) => {
             </h6>
             <StatesVisited rows={stateRows} />
             <br />
-            <p style={{ textAlign: "center" }}>
-              Completed from 2017 - 2023 based on most recent visit
-            </p>
+            <p style={{ textAlign: "center" }}>Completed from 2017 - 2023</p>
           </div>
           <div className="col-6">
             <h6 style={{ textAlign: "center" }}>
@@ -133,8 +131,8 @@ const TravelPage = ({ data }, location) => {
         </div>
         <br />
         <p style={{ textAlign: "center" }}>
-          Based on most recent visited and followed rule of eating locally
-          and/or doing a local activity
+          Both lists are based on most recent visited and followed rule of
+          eating locally and/or doing a local activity
         </p>
         <p style={{ textAlign: "center" }}>
           * layovers, transit through + flying over state/country do not count!
