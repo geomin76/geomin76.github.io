@@ -79,6 +79,7 @@ const countryRows = [
   { country: "Oman", visited: "November 2021" },
   { country: "Peru", visited: "January 2020" },
   { country: "Philippines", visited: "December 2018" },
+  { country: "Portugal", visited: "May 2023" },
   { country: "South Korea", visited: "October 2022" },
   { country: "Spain", visited: "November 2018" },
   { country: "Sweden", visited: "May 2022" },
@@ -131,7 +132,7 @@ const TravelPage = ({ data }, location) => {
         </div>
         <br />
         <p style={{ textAlign: "center" }}>
-          Both lists are based on most recent visited and followed rule of
+          Both lists are based on most recently visited and followed rule of
           eating locally and/or doing a local activity
         </p>
         <p style={{ textAlign: "center" }}>
