@@ -84,6 +84,7 @@ const countryRows = [
   { country: "South Korea", visited: "October 2022" },
   { country: "Spain", visited: "November 2018" },
   { country: "Sweden", visited: "May 2022" },
+  { country: "Turks and Caicos Islands", visited: "August 2023" },
   { country: "United Arab Emirates", visited: "November 2021" },
   { country: "United Kingdom", visited: "May 2022" },
   { country: "United States of America", visited: "Present" },
