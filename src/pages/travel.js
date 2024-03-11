@@ -65,6 +65,7 @@ const stateRows = [
 
 const countryRows = [
   { country: "Argentina", visited: "January 2020" },
+  { country: "Australia", visited: "January 2024" },
   { country: "Bahamas", visited: "January 2016" },
   { country: "Canada", visited: "October 2019" },
   { country: "Chile", visited: "January 2020" },
@@ -76,6 +77,7 @@ const countryRows = [
   { country: "Mexico", visited: "March 2023" },
   { country: "Morocco", visited: "November 2018" },
   { country: "Netherlands", visited: "November 2018" },
+  { country: "New Zealand", visited: "February 2024" },
   { country: "Norway", visited: "May 2022" },
   { country: "Oman", visited: "November 2021" },
   { country: "Peru", visited: "January 2020" },

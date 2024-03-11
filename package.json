@@ -41,6 +41,7 @@
     "react-helmet": "^5.2.1",
     "react-image-gallery": "^1.2.11",
     "react-lazy-load-image-component": "^1.5.1",
+    "sharp": "^0.33.2",
     "typeface-alegreya": "^0.0.69",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
@@ -84,5 +85,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "resolutions": {
+    "gatsby-plugin-sharp/probe-image-size": "^7.0.0"
   }
 }
