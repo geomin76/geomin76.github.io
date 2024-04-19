@@ -11,7 +11,7 @@ import "../utils/css/screen.css"
 
 const BlogIndex = ({ data }, location) => {
   // const siteTitle = data.site.siteMetadata.title
-  const siteTitle = "Geo Min"
+  const siteTitle = "🦦"
   const posts = data.allMarkdownRemark.edges
   let postCounter = 0
 
@@ -21,12 +21,10 @@ const BlogIndex = ({ data }, location) => {
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
-          <h2 className="page-head-title">Hello, World!</h2>
-          <h2 className="page-head-title">My name is Geo Min!</h2>
+          <h2 className="page-head-title">Hi :)</h2>
           <br />
           <p style={{ textAlign: "center", fontSize: 20, lineHeight: 1.5 }}>
-            I'm a software developer, avid traveler, fan of the outdoors and
-            hobby photographer.
+            I'm Geo!
           </p>
         </header>
       )}

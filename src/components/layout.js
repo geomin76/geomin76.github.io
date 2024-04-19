@@ -52,7 +52,7 @@ const Layout = props => {
           {children}
         </div>
       </main>
-      <footer className="site-foot">
+      {/* <footer className="site-foot">
         <a href="https://github.com/geomin76" target="_blank">
           <img
             style={{ height: 55, paddingRight: 5, paddingLeft: 5 }}
@@ -80,7 +80,7 @@ const Layout = props => {
             src="https://cdn0.iconfinder.com/data/icons/global-top-brands/430/linkedin-logo-1-512.png"
           />
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }

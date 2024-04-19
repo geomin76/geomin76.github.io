@@ -94,7 +94,7 @@ const countryRows = [
 ]
 
 const TravelPage = ({ data }, location) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = "🦦"
 
   return (
     <Layout title={siteTitle}>
