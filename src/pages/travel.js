@@ -98,7 +98,7 @@ const countryRows = [
 ]
 
 const TravelPage = ({ data }, location) => {
-  const siteTitle = "🦦"
+  const siteTitle = "geo min"
 
   return (
     <Layout title={siteTitle}>
@@ -110,14 +110,8 @@ const TravelPage = ({ data }, location) => {
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-            Travels
+            travels
           </h2>
-          <p style={{ textAlign: "center" }}>
-            I like traveling and exploring the world!
-          </p>
-          <p style={{ textAlign: "center", fontSize: "15px" }}>
-            Below are all the places I've visited from 2013 to the present!
-          </p>
         </div>
       </article>
       <GoogleMap></GoogleMap>
@@ -125,11 +119,9 @@ const TravelPage = ({ data }, location) => {
         <div className="row">
           <div className="col-6">
             <h6 style={{ textAlign: "center" }}>
-              ✅ {stateRows.length} states visited
+              {stateRows.length} states visited
             </h6>
             <StatesVisited rows={stateRows} />
-            <br />
-            <p style={{ textAlign: "center" }}>Completed from 2017 - 2023</p>
           </div>
           <div className="col-6">
             <h6 style={{ textAlign: "center" }}>
@@ -139,15 +131,6 @@ const TravelPage = ({ data }, location) => {
           </div>
         </div>
         <br />
-        <p style={{ textAlign: "center" }}>
-          Both lists are based on most recently visited and followed rule of
-          eating locally and/or doing a local activity
-        </p>
-        <p style={{ textAlign: "center" }}>
-          * layovers, transit through + flying over state/country do not count!
-          <br />
-          Also, I only count what I remember (nothing from my baby/child days)!
-        </p>
       </article>
     </Layout>
   )

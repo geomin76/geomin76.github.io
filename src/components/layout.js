@@ -25,7 +25,7 @@ const Layout = props => {
             </div>
           </a>
 
-          <nav id="swup" className="site-head-left">
+          {/* <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
               <li className="nav-travel" role="menuitem">
                 <Link to={`/travel`}>Travels</Link>
@@ -34,7 +34,7 @@ const Layout = props => {
                 <Link to={`/photos`}>Photography</Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
 
           <div className="site-head-center">
             <Link className="site-head-logo" to={`/`}>
@@ -48,9 +48,7 @@ const Layout = props => {
         </div>
       </header>
       <main id="site-main" className="site-main">
-        <div id="swup" className="transition-fade">
-          {children}
-        </div>
+        <div id="swup">{children}</div>
       </main>
       {/* <footer className="site-foot">
         <a href="https://github.com/geomin76" target="_blank">

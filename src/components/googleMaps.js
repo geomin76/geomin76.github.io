@@ -26,7 +26,7 @@ const GoogleMaps = ({ latitude, longitude }) => {
   return (
     <div
       className="google-maps-transition"
-      style={{ height: "100vh", width: "100%" }}
+      style={{ height: "70vh", width: "100%" }}
     >
       <GoogleMapReact
         bootstrapURLKeys={{ key: `${process.env.GATSBY_API_KEY}` }}

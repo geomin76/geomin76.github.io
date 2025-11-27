@@ -15,9 +15,6 @@ export default function CountriesVisited({ rows }) {
           <TableHead>
             <TableRow>
               <TableCell sx={{ fontSize: "13px" }}>Country</TableCell>
-              <TableCell sx={{ fontSize: "13px" }} align="right">
-                Month + Year visited
-              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -25,9 +22,6 @@ export default function CountriesVisited({ rows }) {
               <TableRow key={row.country}>
                 <TableCell component="th" scope="row" sx={{ fontSize: "13px" }}>
                   {row.country}
-                </TableCell>
-                <TableCell align="right" sx={{ fontSize: "13px" }}>
-                  {row.visited}
                 </TableCell>
               </TableRow>
             ))}

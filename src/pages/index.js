@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, Link, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,22 +11,34 @@ import "../utils/css/screen.css"
 
 const BlogIndex = ({ data }, location) => {
   // const siteTitle = data.site.siteMetadata.title
-  const siteTitle = "🦦"
+  const siteTitle = "geo min"
   const posts = data.allMarkdownRemark.edges
-  let postCounter = 0
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="Home" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
-      {/* <Bio /> */}
       {data.site.siteMetadata.description && (
-        <header className="page-head">
-          <h2 className="page-head-title">Hi :)</h2>
-          <br />
-          <p style={{ textAlign: "center", fontSize: 20, lineHeight: 1.5 }}>
-            I'm Geo!
-          </p>
-        </header>
+        <>
+          <header className="page-head">
+            <h2 className="page-head-title">hi, i'm Geo!</h2>
+            <ul>
+              <li>
+                <h6 style={{ fontWeight: "normal", lineHeight: "0.5em" }}>
+                  <Link to={`/travel`}>travels</Link>
+                </h6>
+              </li>
+              <li>
+                <h6 style={{ fontWeight: "normal", lineHeight: "0.5em" }}>
+                  <Link to={`/movies`}>movies</Link>
+                </h6>
+              </li>
+              <li>
+                <h6 style={{ fontWeight: "normal", lineHeight: "0.5em" }}>
+                  <Link to={`/books`}>books</Link>
+                </h6>
+              </li>
+            </ul>
+          </header>
+        </>
       )}
     </Layout>
   )

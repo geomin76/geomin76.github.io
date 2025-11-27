@@ -14,7 +14,7 @@ import {
 } from "react-lazy-load-image-component"
 
 const PhotosPage = ({ data, scrollPosition }, location) => {
-  const siteTitle = "🦦"
+  const siteTitle = "geo min"
 
   return (
     <Layout title={siteTitle}>
