@@ -1,0 +1,42 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# One deploy at a time, so two pushes can't race the gh-pages push.
+concurrency:
+  group: deploy-gh-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # MUI 5 wants React 17/18, this site is on React 16, so plain `npm ci` fails.
+      - run: npm ci --legacy-peer-deps
+
+      # gh-pages clones the origin URL into its own cache dir, which doesn't
+      # inherit actions/checkout's credentials, so bake the token into origin.
+      # Global git identity for the same reason.
+      - name: Set up git for gh-pages
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+
+      - name: Build and publish to gh-pages
+        env:
+          GATSBY_QUERY_URL: ${{ secrets.GATSBY_QUERY_URL }}
+          GATSBY_API_KEY: ${{ secrets.GATSBY_API_KEY }}
+        run: npm run deploy
